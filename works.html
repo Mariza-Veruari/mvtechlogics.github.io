@@ -10,22 +10,21 @@
 </head>
 <body class="bg-gray-900 text-white">
     <!-- Navigation -->
-    <nav class="bg-gray-800 fixed w-full z-10">
-        <div class="container mx-auto px-6 py-4">
+    <header class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white">
+        <nav class="container mx-auto px-6 py-4">
             <div class="flex items-center justify-between">
                 <div class="text-2xl font-bold">MV Tech Logics</div>
-                <div class="hidden md:flex space-x-8">
-                    <a href="index.html" class="hover:text-blue-400 transition">Home</a>
-                    <a href="services.html" class="hover:text-blue-400 transition">Services</a>
-                    <a href="works.html" class="text-blue-400 transition">Works</a>
-                    <a href="contact.html" class="hover:text-blue-400 transition">Contact</a>
-                </div>
-                <button class="md:hidden" id="menu-button">
-                    <i class="fas fa-bars text-2xl"></i>
-                </button>
+                <ul class="flex space-x-8">
+                    <li><a href="index.html" class="hover:text-blue-200 transition">Home</a></li>
+                    <li><a href="about.html" class="hover:text-blue-200 transition">About</a></li>
+
+                    <li><a href="services.html" class="hover:text-blue-200 transition">Services</a></li>
+                    <li><a href="ourworks.html" class="hover:text-blue-200 transition">Our Works</a></li>
+                    <li><a href="contact.html" class="hover:text-blue-200 transition">Contact</a></li>
+                </ul>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
     <!-- Mobile Menu -->
     <div class="md:hidden bg-gray-800 fixed w-full z-10 hidden" id="mobile-menu">
@@ -84,110 +83,28 @@
             </div>
         </div>
     </div>
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Our Works - MV Tech Logics</title>
-        <script src="https://cdn.tailwindcss.com"></script>
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    </head>
-    <body class="bg-gray-900 text-white">
-        <header class="bg-gray-800 py-4 fixed w-full z-10">
-            <div class="container mx-auto px-6">
-                <div class="flex items-center justify-between">
-                    <div class="text-2xl font-bold text-blue-400">MV Tech Logics</div>
-                    <div class="hidden md:flex space-x-8">
-                        <a href="index.html" class="hover:text-blue-400 transition">Home</a>
-                        <a href="about.html" class="hover:text-blue-400 transition">About</a>
-                        <a href="services.html" class="hover:text-blue-400 transition">Services</a>
-                        <a href="ourworks.html" class="hover:text-blue-400 transition">Our Works</a>
-                        <a href="contact.html" class="hover:text-blue-400 transition">Contact</a>
-                    </div>
+     <!-- Footer -->
+     <footer class="bg-gray-800 mt-16">
+        <div class="container mx-auto px-6 py-8">
+            <div class="flex flex-col md:flex-row justify-between">
+                <div class="mb-8 md:mb-0">
+                    <h3 class="text-2xl font-bold mb-4">MV Tech Logics</h3>
+                    <p class="text-gray-400 max-w-sm">Empowering businesses through innovative technology solutions.</p>
                 </div>
-            </div>
-        </header>
-
-        <!-- Hero Section -->
-        <div class="container mx-auto px-6 pt-32 pb-16">
-            <h1 class="text-5xl font-bold text-blue-400 mb-8 text-center animate-fade-in">Our Works</h1>
-            <p class="text-xl text-gray-400 text-center mb-12 max-w-3xl mx-auto animate-fade-in">
-                Explore our portfolio of successful projects and innovative solutions that have helped businesses thrive in the digital age.
-            </p>
-        </div>
-
-        <!-- Projects Grid -->
-        <div class="container mx-auto px-6 py-16">
-            <div class="grid md:grid-cols-2 gap-8">
-                <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden animate-fade-in">
-                    <img src="images/project1.jpg" alt="Project 1" class="w-full h-64 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-2xl font-semibold mb-2">E-Commerce Platform</h3>
-                        <p class="text-gray-400 mb-4">A full-featured online shopping platform with secure payment integration.</p>
-                        <a href="#" class="text-blue-400 hover:text-blue-300">Learn More →</a>
-                    </div>
-                </div>
-                <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden animate-fade-in">
-                    <img src="images/project2.jpg" alt="Project 2" class="w-full h-64 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-2xl font-semibold mb-2">Mobile App Development</h3>
-                        <p class="text-gray-400 mb-4">Cross-platform mobile application for business management.</p>
-                        <a href="#" class="text-blue-400 hover:text-blue-300">Learn More →</a>
-                    </div>
-                </div>
-                <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden animate-fade-in">
-                    <img src="images/project3.jpg" alt="Project 3" class="w-full h-64 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-2xl font-semibold mb-2">Cloud Migration</h3>
-                        <p class="text-gray-400 mb-4">Successful migration of enterprise systems to cloud infrastructure.</p>
-                        <a href="#" class="text-blue-400 hover:text-blue-300">Learn More →</a>
-                    </div>
-                </div>
-                <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden animate-fade-in">
-                    <img src="images/project4.jpg" alt="Project 4" class="w-full h-64 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-2xl font-semibold mb-2">AI Integration</h3>
-                        <p class="text-gray-400 mb-4">Implementation of AI-powered analytics and automation solutions.</p>
-                        <a href="#" class="text-blue-400 hover:text-blue-300">Learn More →</a>
-                    </div>
+                <div class="flex space-x-4">
+                    <a href="#" class="hover:text-blue-400 transition"><i class="fab fa-facebook text-2xl"></i></a>
+                    <a href="#" class="hover:text-blue-400 transition"><i class="fab fa-twitter text-2xl"></i></a>
+                    <a href="#" class="hover:text-blue-400 transition"><i class="fab fa-linkedin text-2xl"></i></a>
+                    <a href="#" class="hover:text-blue-400 transition"><i class="fab fa-instagram text-2xl"></i></a>
                 </div>
             </div>
         </div>
-
-        <!-- Footer -->
-        <footer class="bg-gray-800 py-12">
-            <div class="container mx-auto px-6">
-                <div class="grid md:grid-cols-3 gap-8">
-                    <div>
-                        <h4 class="text-xl font-semibold mb-4">About Us</h4>
-                        <p class="text-gray-400">MV Tech Logics specializes in delivering innovative technology solutions for businesses worldwide.</p>
-                    </div>
-                    <div>
-                        <h4 class="text-xl font-semibold mb-4">Quick Links</h4>
-                        <ul class="text-gray-400">
-                            <li class="mb-2"><a href="about.html" class="hover:text-blue-400">About</a></li>
-                            <li class="mb-2"><a href="services.html" class="hover:text-blue-400">Services</a></li>
-                            <li class="mb-2"><a href="contact.html" class="hover:text-blue-400">Contact</a></li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h4 class="text-xl font-semibold mb-4">Connect With Us</h4>
-                        <div class="flex space-x-4">
-                            <a href="#" class="text-gray-400 hover:text-blue-400"><i class="fab fa-facebook"></i></a>
-                            <a href="#" class="text-gray-400 hover:text-blue-400"><i class="fab fa-twitter"></i></a>
-                            <a href="#" class="text-gray-400 hover:text-blue-400"><i class="fab fa-linkedin"></i></a>
-                            <a href="#" class="text-gray-400 hover:text-blue-400"><i class="fab fa-instagram"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
-                    <p>&copy; 2024 MV Tech Logics. All rights reserved.</p>
-                </div>
+        <div class="border-t border-gray-700 py-4">
+            <div class="container mx-auto px-6 text-center">
+                <p>&copy; 2024 MV Tech Logics. All rights reserved.</p>
             </div>
-        </footer>
+        </div>
+    </footer>
+</body>
+</html>
 
-        <script src="js/main.js"></script>
-    </body>
-    </html>
