@@ -1,23 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Same head content as index.html -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - MV Tech Logics</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
-<body class="bg-gray-50">
-    <!-- Same navigation and mobile menu as index.html -->
-    
-    <div class="container mx-auto px-4 py-12">
-        <h2 class="text-3xl font-bold text-blue-600 mb-8">Our Services</h2>
-        <div class="grid md:grid-cols-3 gap-6">
-            <div class="bg-white p-6 rounded-lg shadow-md">
-                <h3 class="text-xl font-semibold mb-4">Web Development</h3>
-                <p class="text-gray-600">Custom websites and web applications</p>
+<body class="bg-gray-900 text-white">
+    <!-- Navigation -->
+    <header class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="text-2xl font-bold">MV Tech Logics</div>
+                <ul class="flex space-x-8">
+                    <li><a href="index.html" class="hover:text-blue-200 transition">Home</a></li>
+                    <li><a href="about.html" class="hover:text-blue-200 transition">About</a></li>
+
+                    <li><a href="services.html" class="hover:text-blue-200 transition">Services</a></li>
+                    <li><a href="ourworks.html" class="hover:text-blue-200 transition">Our Works</a></li>
+                    <li><a href="contact.html" class="hover:text-blue-200 transition">Contact</a></li>
+                </ul>
             </div>
-            <!-- Add more service cards -->
+        </nav>
+    </header>
+    <!-- Services Section -->
+    <div class="container mx-auto px-6 py-16">
+        <h2 class="text-4xl font-bold text-blue-400 mb-12 text-center animate-fade-in">Our Services</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-gray-800 p-8 rounded-lg shadow-lg hover:shadow-xl transition animate-fade-in">
+                <i class="fas fa-code text-4xl text-blue-400 mb-6"></i>
+                <h3 class="text-2xl font-semibold mb-4">Web Development</h3>
+                <p class="text-gray-400">We create custom, responsive websites and web applications tailored to your business needs. Our solutions are modern, fast, and user-friendly.</p>
+            </div>
+            <div class="bg-gray-800 p-8 rounded-lg shadow-lg hover:shadow-xl transition animate-fade-in">
+                <i class="fas fa-mobile-alt text-4xl text-blue-400 mb-6"></i>
+                <h3 class="text-2xl font-semibold mb-4">Mobile Development</h3>
+                <p class="text-gray-400">Native and cross-platform mobile applications for iOS and Android. We deliver high-performance apps with stunning user interfaces.</p>
+            </div>
+            <div class="bg-gray-800 p-8 rounded-lg shadow-lg hover:shadow-xl transition animate-fade-in">
+                <i class="fas fa-cloud text-4xl text-blue-400 mb-6"></i>
+                <h3 class="text-2xl font-semibold mb-4">Cloud Solutions</h3>
+                <p class="text-gray-400">Scalable cloud infrastructure and services to help your business grow. We provide secure, reliable cloud solutions and consulting.</p>
+            </div>
         </div>
     </div>
 
-    <!-- Same footer as index.html -->
-    <script src="js/main.js"></script>
+    <!-- Footer -->
+    <footer class="bg-gray-800 mt-16">
+        <div class="container mx-auto px-6 py-8">
+            <div class="flex flex-col md:flex-row justify-between">
+                <div class="mb-8 md:mb-0">
+                    <h3 class="text-2xl font-bold mb-4">MV Tech Logics</h3>
+                    <p class="text-gray-400 max-w-sm">Empowering businesses through innovative technology solutions.</p>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="#" class="hover:text-blue-400 transition"><i class="fab fa-facebook text-2xl"></i></a>
+                    <a href="#" class="hover:text-blue-400 transition"><i class="fab fa-twitter text-2xl"></i></a>
+                    <a href="#" class="hover:text-blue-400 transition"><i class="fab fa-linkedin text-2xl"></i></a>
+                    <a href="#" class="hover:text-blue-400 transition"><i class="fab fa-instagram text-2xl"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="border-t border-gray-700 py-4">
+            <div class="container mx-auto px-6 text-center">
+                <p>&copy; 2024 MV Tech Logics. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
+

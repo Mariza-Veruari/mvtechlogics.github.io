@@ -1,19 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Same head content as index.html -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Works - MV Tech Logics</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="bg-gray-50">
-    <!-- Same navigation and mobile menu as index.html -->
-    
-    <div class="container mx-auto px-4 py-12">
-        <h2 class="text-3xl font-bold text-blue-600 mb-8">Our Works</h2>
-        <div class="grid md:grid-cols-2 gap-6">
-            <!-- Project cards go here -->
+<body class="bg-gray-900 text-white">
+    <!-- Navigation -->
+    <header class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="text-2xl font-bold">MV Tech Logics</div>
+                <ul class="flex space-x-8">
+                    <li><a href="index.html" class="hover:text-blue-200 transition">Home</a></li>
+                    <li><a href="about.html" class="hover:text-blue-200 transition">About</a></li>
+
+                    <li><a href="services.html" class="hover:text-blue-200 transition">Services</a></li>
+                    <li><a href="ourworks.html" class="hover:text-blue-200 transition">Our Works</a></li>
+                    <li><a href="contact.html" class="hover:text-blue-200 transition">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="md:hidden bg-gray-800 fixed w-full z-10 hidden" id="mobile-menu">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex flex-col space-y-4">
+                <a href="index.html" class="hover:text-blue-400 transition">Home</a>
+                <a href="services.html" class="hover:text-blue-400 transition">Services</a>
+                <a href="works.html" class="text-blue-400 transition">Works</a>
+                <a href="contact.html" class="hover:text-blue-400 transition">Contact</a>
+            </div>
         </div>
     </div>
 
-    <!-- Same footer as index.html -->
-    <script src="js/main.js"></script>
-</body>
-</html>
+    <!-- Hero Section -->
+    <div class="container mx-auto px-6 pt-32 pb-16">
+        <h1 class="text-5xl font-bold text-blue-400 mb-8 text-center animate-fade-in">Our Works</h1>
+        <p class="text-xl text-gray-400 text-center mb-12 max-w-3xl mx-auto animate-fade-in">
+            Explore our portfolio of successful projects and innovative solutions that have helped businesses thrive in the digital age.
+        </p>
+    </div>
+
+    <!-- Projects Grid -->
+    <div class="container mx-auto px-6 py-16">
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden animate-fade-in">
+                <img src="images/project1.jpg" alt="Project 1" class="w-full h-64 object-cover">
+                <div class="p-6">
+                    <h3 class="text-2xl font-semibold mb-2">E-Commerce Platform</h3>
+                    <p class="text-gray-400 mb-4">A full-featured online shopping platform with secure payment integration.</p>
+                    <a href="#" class="text-blue-400 hover:text-blue-300">Learn More →</a>
+                </div>
+            </div>
+            <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden animate-fade-in">
+                <img src="images/project2.jpg" alt="Project 2" class="w-full h-64 object-cover">
+                <div class="p-6">
+                    <h3 class="text-2xl font-semibold mb-2">Mobile App Development</h3>
+                    <p class="text-gray-400 mb-4">Cross-platform mobile application for business management.</p>
+                    <a href="#" class="text-blue-400 hover:text-blue-300">Learn More →</a>
+                </div>
+            </div>
+            <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden animate-fade-in">
+                <img src="images/project3.jpg" alt="Project 3" class="w-full h-64 object-cover">
+                <div class="p-6">
+                    <h3 class="text-2xl font-semibold mb-2">Cloud Migration</h3>
+                    <p class="text-gray-400 mb-4">Successful migration of enterprise systems to cloud infrastructure.</p>
+                    <a href="#" class="text-blue-400 hover:text-blue-300">Learn More →</a>
+                </div>
+            </div>
+            <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden animate-fade-in">
+                <img src="images/project4.jpg" alt="Project 4" class="w-full h-64 object-cover">
+                <div class="p-6">
+                    <h3 class="text-2xl font-semibold mb-2">AI Integration</h3>
+                    <p class="text-gray-400 mb-4">Implementation of AI-powered analytics and automation solutions.</p>
+                    <a href="#" class="text-blue-400 hover:text-blue-300">Learn More →</a>
+                </div>
+            </div>
+        </div>
+    </div>
